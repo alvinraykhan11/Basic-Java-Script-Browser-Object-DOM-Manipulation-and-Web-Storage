@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="assets/img/icon.ico" alt="Icon-Aplus-Dessert">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Comic Sans:300,400,500" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <h2>
+            Bookshelf Apps
+        </h2>
+    </header>
+
+
+    <section>
+        <article>
+            <h2>Tambah buku</h2>
+            <form class="form" action="#" id="form">
+                <div class="input-group">
+                    <label for="title">Judul</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="input-group">
+                    <label for="title">Penulis</label>
+                    <input type="text" id="author" name="title" required>
+                </div>
+                <div class="input-group">
+                    <label for="date">Tahun</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="input-inline">
+                    <label for="inputBookIsComplete">Selesai dibaca</label>
+                    <input id="inputBookIsComplete" type="checkbox">
+                </div>
+                <input type="submit" value="Masukkan Buku" name="Submit" class="btn-submit">
+            </form>
+        </article>
+        <div class="wrapper">
+            <article>
+                <h2>Belum selesai dibaca</h2>
+                <div class="list-item" id="books">
+
+                </div>
+            </article>
+            <article>
+                <h2>Selesai dibaca</h2>
+                <div class="list-item" id="completed-books">
+
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <script src="js/data.js" type="text/javascript"></script>
+    <script src="js/dom.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/search.js" type="text/javascript"></script>
+</body>
+
+</html>
